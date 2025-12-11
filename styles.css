@@ -11,8 +11,6 @@
 	--boxShadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
 
 	--equalBg: rgba(0, 0, 255, 0.25);
-
-	--u: 1px solid red;
 }
 
 * {
@@ -47,6 +45,12 @@ main {
 	aspect-ratio: 2/3.3;
 	background: var(--mainBg);
 	border-radius: 40px;
+	opacity: 0;
+	animation: show 2s ease 0.05s forwards;
+}
+
+@keyframes show {
+	100% { opacity: 1; }
 }
 
 /* Display Screen Input */
